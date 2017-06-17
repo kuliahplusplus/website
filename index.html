@@ -19,20 +19,45 @@
 			padding-left: 2%;
 		}*/
 
-		#myCarousel{
-
+		#footer{
+			background-color: #00275b;
+			color: white;
+			padding-left: 5%;
 		}
+		body
+		{
+			background-color: #fcfcf4;
+			}
 		.navbar{
 
-			/*background-color: #c7dbfc;
+			background-color:white;
+
 			margin-bottom: 0;*/
 
 
 		}
 
-		.carousel-inner > .item > img:hover{
- opacity: 0.5;
+		@media only screen and (max-width: 767px) {
+
+   h1 {
+      font-size: 16px;
+   }
+
+
+	 p {
+		 font-size: 8px;
+	 }
+
+
+
 }
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+		.carousel-inner > .item > img:hover{
+		 opacity: 0.5;
+		}
 		.carousel-inner > .item > img,
 		.carousel-inner > .item > a > img {
 				display: block;
@@ -44,6 +69,9 @@
 				transition: 0.6s;
 		}
 
+.carousel {
+	background-color: white;
+}
 
 		.nav > li > a{
 		color:black;
@@ -107,7 +135,7 @@
 					<div class="item active">
 						<img src="learn.png" alt="Html Programming"  style="width:100%;">
 						<div class="carousel-caption">
-			 <h4>Learn With Us</h4>
+			 <h1>Learn With Us</h1>
 			 <p>Register and learn with us</p>
 			 	 </div>
 			 <div class="overlay"></div>
@@ -118,7 +146,7 @@
 						<img src="baju.png" alt="Css Programming" style="width:100%;">
 
 						<div class="carousel-caption">
-						 <h4>Accesories & Merchandise</h4>
+						 <h1>Accesories & Merchandise</h1>
 						 <p>See our accesories and marchendies</p>
 					 	</div>
 
@@ -126,7 +154,7 @@
 					<div class="item">
 						<img src="game.png" alt="Game Developer" style="width:100%;">
 								<div class="carousel-caption">
-								 <h4>Play A Game</h4>
+								 <h1>Play A Game</h1>
 								 <p>Play Our Online Game, For Free</p>
 								 </div>
 					</div>
@@ -135,7 +163,7 @@
 
 						<img src="us.png" alt="JavaScript Programming" style="width:100%;">
 						<div class="carousel-caption">
-			 <h4>About Us</h4>
+			 <h1>About Us</h1>
 
 			 	 </div>
 					</div>
@@ -155,8 +183,8 @@
 
 			<!-- footer -->
 
-		<div class="container">
-			<div class="container">
+
+			<div  id = "footer">
 				<div class="disclaimer">
 					<span class="text-left"> About Us - Advertise - Policy - Contact Us</span>
 				</div>
@@ -164,6 +192,6 @@
 					<span class="align-left">Copyright &copy 2017 KULIAH PLUSPLUS</span>
 				</div><!-- end copyright -->
 			</div>
-		</div>
+
 	</body>
 </html>
