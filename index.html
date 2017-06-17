@@ -8,7 +8,9 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
 
 		<style media="screen">
 		/*.page-header{
@@ -24,33 +26,46 @@
 			color: white;
 			padding-left: 5%;
 		}
+
+		.navbar-brand {
+		  padding: 0px;
+		}
+		.navbar-brand>img {
+		  height: 100%;
+		  padding: 15px;
+		  width: auto;
+		}
+
+		.navbar-brand {
+  height: 80px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+
+}
+.navbar-toggle {
+  padding: 10px;
+
+}
+
 		body
 		{
 			background-color: #fcfcf4;
 			}
+
 		.navbar{
 
 			background-color:white;
 
-			margin-bottom: 0;*/
+			margin-bottom: 0;
 
 
 		}
+		#top{
+						border-bottom: 1px solid #9f9fa0;
+		}
 
-		@media only screen and (max-width: 767px) {
-
-   h1 {
-      font-size: 16px;
-   }
-
-
-	 p {
-		 font-size: 8px;
-	 }
-
-
-
-}
 
 .carousel .carousel-control { visibility: hidden; }
 .carousel:hover .carousel-control { visibility: visible; }
@@ -72,12 +87,22 @@
 .carousel {
 	background-color: white;
 }
+* {
+
+font-family: 'Open Sans', sans-serif;
+}
 
 		.nav > li > a{
 		color:black;
-		-webkit-text-stroke-width: 0.3px;
-			 -webkit-text-stroke-color: black;
+
+
 		}
+		#topNavbar{
+
+margin-left: 5%;
+
+		}
+
 		.nav > li > a:focus,
 		.nav > li > a:hover
 		{
@@ -85,23 +110,50 @@
 				background-color:#fef4ff;
 		}
 
+		.isiFooter{
+
+			color: gray;
+
+		}
+
+		@media only screen and (max-width: 767px) {
+
+   .carousel h1 {
+      font-size: 16px;
+   }
+
+
+	 .carousel p {
+		 font-size: 8px;
+	 }
+
+
+}
+
 		</style>
 
 
 	</head>
 	<body>
+
+		<!-- NAVBAR MENU -->
+
+
+
 		<!-- <div class="page-header"> -->
-			<nav class="navbar">
+			<nav class="navbar" id = "top">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">KULIAH PLUSPLUS</a>
+						<a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
 						<button class="navbar-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
 							<span class="glyphicon glyphicon-align-justify"></span>
 						</button>
 					</div>
 
 					<div class="collapse navbar-collapse" id="topNavbar">
-						<ul class="nav navbar-nav ">
+
+
+						<ul id ="menu"class="nav navbar-nav ">
 							<li class="active"><a href="#">Home</a></li>
 							<li><a href="#">Infomasi</a></li>
 							<li><a href="#">Teknologi</a></li>
@@ -110,16 +162,19 @@
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							<li><a href="#"><button type="button" class="btn btn-success"> Sign Up</button></a></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 						</ul>
+
+
 					</div>
 				</div>
 			</nav>
 		<!-- </div> -->
 
-	<!-- content -->
-			<!--<h1>KULIAH PLUSPLUS</h1>-->
+	<!-- CONTENT-->
+
+		<!-- SLIDE SHOW -->
 
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -181,15 +236,162 @@
 			</div>
 
 
+  <!-- WELCOME PAGE -->
+
+			<div class="container" style="margin-top : 5%;">
+			  <div class="jumbotron">
+			    <h2 class="text-center">Selamat Datang Di Website Kuliah Plusplus</h2>
+					<br>
+			    <p class="text-center">Terimakasih telah mengunjungi website ini ,website ini masih masa pengembangan. Tujuan
+					dari dibentuknya website ini semoga bisa memberikan ilmu dan hal-hal bermanfaat nantinya.
+				  Web Ini adalah website resmi dari komunitas kuliah plusplus, komunitas awam yang di bentuk
+					di kampus ITATS Surabaya , dan bertujuan untuk
+					memberikan semangat kepada mahasiswa (khususnya programer pemula) untuk terus belajar, karena jika hanya belajar di kampus
+					itu tidak cukup.
+				 </p>
+				 <br>
+
+				 <p class="text-center">Jika anda ingin bergabung kedalam komunitas ini, anda bisa mendaftar sekarang juga
+				 </p>
+				 <br>
+
+				 <div class="text-center">
+
+
+				 <button class="btn btn-info">SIGN UP</button>
+
+				  <button class="btn btn-info">SIGN IN WITH FACEBOOK</button>
+
+				  </div>
+			  </div>
+
+			<br>
+			<br>
+			</div>
+
+			<!-- visi dan misi -->
+
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-6">
+						<h1 class="text-center">VISI</h1>
+
+						<div class="jumbotron">
+
+
+						<ul>
+
+							<li><p>Membuat komunitas untuk berbagi ilmu</p></li>
+							<li><p>Menciptakan tempat wadah belajar</p></li>
+							<li><p>Menghubungkan para programmer awam</p></li>
+						</ul>
+
+						</div>
+
+					</div>
+
+					<div class="col-sm-6">
+						<h1 class="text-center">MISI</h1>
+
+						<div class="jumbotron" style="background-color:white;">
+
+							<ul>
+
+								<li><p>Memebetuk komunitas yang erat dan kuat</p></li>
+								<li><p>Selalu aktif untuk belajar</p></li>
+								<li><p>Berusaha memberikan pengetahuan yang mudah dipahamkan</p></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+
+
 			<!-- footer -->
 
 
 			<div  id = "footer">
 				<div class="disclaimer">
-					<span class="text-left"> About Us - Advertise - Policy - Contact Us</span>
+
+					<div class="row">
+
+						<div class="col-sm-3 ">
+
+							<h6>ABOUT US</h6>
+
+								<h6  class = "isiFooter">Sekumpulan pelajar yang ingin membangun sebuah komunitas
+								untuk tempat wadah belajar bagi para pelajar dan mahasiswa, dan saling berbagi
+							ilmu satu sama lain</h6>
+
+						</div>
+						<div class="col-sm-3 ">
+
+							<h6>CONTACT INFORMATION</h6>
+
+
+							<h6  class = "isiFooter">+62 821 1250 7569</h6>
+							<h6  class = "isiFooter">kuliahpluplus@gmail.com</h6>
+
+						</div>
+
+						<div class="col-sm-3">
+
+							<h6>NEWSLETTER</h6>
+
+							<h6 class="isiFooter">Subcribe for get new update</h6>
+
+							<form class="" action="index.html" method="post">
+
+								<input type="email" name="" value="enter your email">
+								<button type="submit" name="button" class="btn-danger">SUBSCRIBE</button>
+
+
+							</form>
+
+						</div>
+
+
+						<div class="col-sm-3">
+							<h6>SOCIAL MEDIA</h6>
+							<a class="" >
+
+			 <h6><span class="fa fa-facebook"></span> Like our Facebook Page</h6>
+		 </a>
+
+		 <a class="" >
+		 	<h6><span class="fa fa-instagram"></span> Follow us on Instagram</h6>
+		</a>
+
+		<a class="" >
+		 <h6><span class="fa fa-github"></span> Check our Github</h6>
+	 </a>
+
+
+
+
+
+						</div>
+
+
+					</div>
+
 				</div>
+				<br>
+				<br>
+				<br>
 				<div class="copyright">
-					<span class="align-left">Copyright &copy 2017 KULIAH PLUSPLUS</span>
+					<h6 class="align-left"style="color:#d8d8d8;" >Copyright &copy 2017 KULIAH PLUSPLUS. All Right Reserved</h6>
 				</div><!-- end copyright -->
 			</div>
 
