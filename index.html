@@ -5,133 +5,18 @@
 		<title>KULIAH PLUSPLUS</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<script src="bootstrap/js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-social/bootstrap-social.css">
 
-		<style media="screen">
-		/*.page-header{
-			background-color: #b6cbed;
-			margin: 0;
-			border-bottom: 10 10 10;
-			padding-top: 2%;
-			padding-left: 2%;
-		}*/
-
-		#footer{
-			background-color: #00275b;
-			color: white;
-			padding-left: 5%;
-		}
-
-		.navbar-brand {
-		  padding: 0px;
-		}
-		.navbar-brand>img {
-		  height: 100%;
-		  padding: 15px;
-		  width: auto;
-		}
-
-		.navbar-brand {
-  height: 70px;
-}
-
-.nav >li >a {
-  padding-top: 30px;
-
-}
-.navbar-toggle {
-
-	margin-top: 5%;
-}
-
-		body
-		{
-			background-color: #fcfcf4;
-			}
-
-		.navbar{
-
-			background-color:white;
-
-			margin-bottom: 0;
-
-
-		}
-		#top{
-						border-bottom: 1px solid #9f9fa0;
-		}
-
-
-.carousel .carousel-control { visibility: hidden; }
-.carousel:hover .carousel-control { visibility: visible; }
-
-		.carousel-inner > .item > img:hover{
-		 opacity: 0.5;
-		}
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-				display: block;
-				max-width: 100%;
-				max-height: 100%;
-				filter: grayscale(10%);
-
-
-				transition: 0.6s;
-		}
-
-.carousel {
-	background-color: white;
-}
-* {
-
-font-family: 'Open Sans', sans-serif;
-}
-
-		.nav > li > a{
-		color:black;
-
-
-		}
-		#topNavbar{
-
-margin-left: 5%;
-
-		}
-
-		.nav > li > a:focus,
-		.nav > li > a:hover
-		{
-			font-size: 130%;
-				background-color:#fef4ff;
-		}
-
-		.isiFooter{
-
-			color: gray;
-
-		}
-
-		@media only screen and (max-width: 767px) {
-
-   .carousel h1 {
-      font-size: 16px;
-   }
-
-
-	 .carousel p {
-		 font-size: 8px;
-	 }
-
-
-}
-
-		</style>
-
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/form.css">
 
 	</head>
 	<body>
@@ -144,7 +29,7 @@ margin-left: 5%;
 			<nav class="navbar" id = "top">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
+						<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
 						<button class="navbar-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
 							<span class="glyphicon glyphicon-align-justify"></span>
 						</button>
@@ -162,8 +47,9 @@ margin-left: 5%;
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><button type="button" class="btn btn-success"> Sign Up</button></a></li>
-							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							<li><a href="#"><button type="button" class="btn btn-success btn-lg"
+								 data-toggle="modal" data-target="#myModal"> Sign in</button></a></li>
+							<!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
 						</ul>
 
 
@@ -188,7 +74,7 @@ margin-left: 5%;
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="learn.png" alt="Html Programming"  style="width:100%;">
+						<img src="img/learn.png" alt="Html Programming"  style="width:100%;">
 						<div class="carousel-caption">
 			 <h1>Learn With Us</h1>
 			 <p>Register and learn with us</p>
@@ -198,7 +84,7 @@ margin-left: 5%;
 
 					</div>
 					<div class="item">
-						<img src="baju.png" alt="Css Programming" style="width:100%;">
+						<img src="img/baju.png" alt="Css Programming" style="width:100%;">
 
 						<div class="carousel-caption">
 						 <h1>Accesories & Merchandise</h1>
@@ -207,7 +93,7 @@ margin-left: 5%;
 
 					</div>
 					<div class="item">
-						<img src="game.png" alt="Game Developer" style="width:100%;">
+						<img src="img/game.png" alt="Game Developer" style="width:100%;">
 								<div class="carousel-caption">
 								 <h1>Play A Game</h1>
 								 <p>Play Our Online Game, For Free</p>
@@ -216,7 +102,7 @@ margin-left: 5%;
 					<div class="item">
 
 
-						<img src="us.png" alt="JavaScript Programming" style="width:100%;">
+						<img src="img/us.png" alt="JavaScript Programming" style="width:100%;">
 						<div class="carousel-caption">
 			 <h1>About Us</h1>
 
@@ -318,7 +204,98 @@ margin-left: 5%;
 			<br>
 
 
-			<!-- footer -->
+
+			<!-- MODAL FORM -->
+
+
+		<div class="modal fade" id="myModal" role="dialog">
+	 <div class="modal-dialog">
+
+		 <!-- Modal content-->
+
+		 <div class="modal-content">
+			 <div class="modal-header">
+				 <button type="button" class="close" data-dismiss="modal">&times;</button>
+				 <h4 class="modal-title">SIGN IN</h4>
+			 </div>
+			 <div class="modal-body">
+				 <div class="container-fluid">
+
+
+
+							<div class="row">
+								<div class="col-sm-6"  id="tempatForm">
+									<form>
+
+								 <div class="form-group">
+									<label for="usr">Username/Email</label>
+									<input type="text" class="form-control" id="usr">
+								</div>
+								 <div class="form-group">
+									 <label for="pwd">Password:</label>
+									 <input type="password" class="form-control" id="pwd">
+								 </div>
+								 <br>
+
+								 <div class="form-button">
+										<input type="submit" value="Sign In" class="btn btn-cp btn-block btn-lg btn-success">
+									</div>
+							 </form>
+
+							 <br>
+							 <p>Lupa Password? <a href="#">Reset Password</a></p>
+
+
+							 <p>Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+							 <br>
+
+
+
+								</div>
+
+
+								<div class="col-sm-6">
+
+
+									<h5>Or connect with : </h5>
+									<br>
+
+									<a class="btn btn-block btn-social btn-facebook">
+										<i class="fa fa-facebook"></i>Sign in with Facebook</a>
+
+									<a class="btn btn-block btn-social btn-github">
+										<i class="fa fa-github"></i>Sign in with GitHub</a>
+
+
+
+								</div>
+
+
+
+
+
+
+							</div>
+
+					</div>
+			 </div>
+			 <div class="modal-footer">
+				
+			 </div>
+		 </div>
+
+	 </div>
+ </div>
+
+
+
+
+
+
+			<!-- END -->
+
+
+			<!-- FOOTER -->
 
 
 			<div  id = "footer">
@@ -326,12 +303,13 @@ margin-left: 5%;
 
 					<div class="row">
 
-						<div class="col-sm-3 ">
+						<div class="col-sm-3">
 
 							<h6>ABOUT US</h6>
 
 								<h6  class = "isiFooter">Sekumpulan pelajar yang ingin membangun sebuah komunitas
-								untuk tempat wadah belajar bagi para pelajar dan mahasiswa, dan saling berbagi
+								untuk tempat wadah belajar bagi para pelajar dan mahasiswa,
+								 dan saling berbagi
 							ilmu satu sama lain</h6>
 
 						</div>
@@ -377,13 +355,7 @@ margin-left: 5%;
 		 <h6><span class="fa fa-github"></span> Check our Github</h6>
 	 </a>
 
-
-
-
-
 						</div>
-
-
 					</div>
 
 				</div>

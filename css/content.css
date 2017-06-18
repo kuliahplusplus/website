@@ -1,0 +1,50 @@
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+		.carousel-inner > .item > img:hover{
+		 opacity: 0.5;
+		}
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+				display: block;
+				max-width: 100%;
+				max-height: 100%;
+				filter: grayscale(10%);
+
+
+				transition: 0.6s;
+		}
+
+.carousel {
+	background-color: white;
+}
+
+* {
+
+font-family: 'Open Sans', sans-serif;
+}
+
+		.nav > li > a{
+		color:black;
+
+
+		}
+
+body
+	{
+	background-color: #fcfcf4;
+	}
+
+
+  /*MODAL*/
+
+
+  #myModal{
+
+    margin-top: 5%;
+  }
+
+  #tempatForm{
+    border-right: 1px solid #e5e5e5;
+  }
