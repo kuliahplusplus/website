@@ -34,11 +34,7 @@ height: 70px;
 padding-top: 25px;
 height: 20px;
 }
-.nav >li >a >button{
-position: relative;
-bottom: 15px;
 
-}
 .navbar-toggle {
 
 margin-top: 5%;
@@ -58,5 +54,23 @@ margin-left: 5%;
 .nav > li > a:hover
 {
   font-size: 130%;
-    background-color:#fef4ff;
+  background-color: transparent;
+}
+
+
+#signButton {
+
+
+color :#f26113;
+border-color: #f26113;
+background-color: white;
+  border-radius: 10px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+
+}
+#signButton:hover {
+
+  background:#f9f9f9;
 }
